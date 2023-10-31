@@ -45,7 +45,6 @@ public class EntryPointOfApplication extends Application {
         SingleSelectionModel<String> fruitSelectionModel = fruitChoiceBox.getSelectionModel();
         ReadOnlyProperty <String>  fruitStringReadOnlyProperty = fruitSelectionModel.selectedItemProperty();
         fruitStringReadOnlyProperty.addListener((observable,oldSelectedValue,newSelectedValue) -> {
-            System.out.println(observable.getClass().getName());
             System.out.println("OLD: " + oldSelectedValue);
             System.out.println("NEW: " + newSelectedValue);
 
